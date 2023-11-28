@@ -14,10 +14,10 @@ jobs:
       uses: 'google-github-actions/auth@v0.3.1'
       with:
           create_credentials_file: 'true'
-          workload_identity_provider: 'projects/823790742896/locations/global/workloadIdentityPools/my-pool-demo/providers/my-provider-new'
-          service_account: 'cloudquicklab@appspot.gserviceaccount.com'
+          workload_identity_provider: 'projects/581760744627/locations/global/workloadIdentityPools/my-pool-demo/providers/my-provider-new'
+          service_account: 'formidable-bus-399609@appspot.gserviceaccount.com'
     - id: 'gcloud'
       name: 'gcloud'
       run: |-
         gcloud auth login --brief --cred-file="${{ steps.auth.outputs.credentials_file_path }}"
-        gcloud services list --project cloudquicklab
+        gcloud services list --project formidable-bus-399609
