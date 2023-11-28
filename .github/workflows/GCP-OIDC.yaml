@@ -14,7 +14,7 @@ jobs:
       uses: 'google-github-actions/auth@v0.3.1'
       with:
           create_credentials_file: 'true'
-          workload_identity_provider: 'projects/581760744627/locations/global/workloadIdentityPools/my-pool-demo/providers/my-provider-new'
+          workload_identity_provider: 'projects/581760744627/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
           service_account: 'formidable-bus-399609@appspot.gserviceaccount.com'
     - id: 'gcloud'
       name: 'gcloud'
